@@ -1,0 +1,14 @@
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\bin\Debug\net7.0\ProjetoScreenSound.exe
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\bin\Debug\net7.0\ProjetoScreenSound.deps.json
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\bin\Debug\net7.0\ProjetoScreenSound.runtimeconfig.json
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\bin\Debug\net7.0\ProjetoScreenSound.dll
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\bin\Debug\net7.0\ProjetoScreenSound.pdb
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\ProjetoScreenSound.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\ProjetoScreenSound.AssemblyInfoInputs.cache
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\ProjetoScreenSound.AssemblyInfo.cs
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\ProjetoScreenSound.csproj.CoreCompileInputs.cache
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\ProjetoScreenSound.dll
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\refint\ProjetoScreenSound.dll
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\ProjetoScreenSound.pdb
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\ProjetoScreenSound.genruntimeconfig.cache
+C:\Users\matheus.souza\Desktop\Estudos matheus\ProjetoScreenSound\ProjetoScreenSound\obj\Debug\net7.0\ref\ProjetoScreenSound.dll
