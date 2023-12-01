@@ -1,11 +1,9 @@
 ﻿// Screen Sound
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
-List<string> listaDasBandas = new List<string> { "U2", "The Beatles", "Calypso" };
 
-void ExibirMensagemDeBoasVindas()
+void ExibirLogo()
 {
     Console.WriteLine(@"
-
 ░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
 ██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
 ╚█████╗░██║░░╚═╝██████╔╝█████╗░░█████╗░░██╔██╗██║  ╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
@@ -26,12 +24,42 @@ void ExibirOpcoesDoMenu()
     Console.Write("\nDigite a sua opção: ");
     string opcaoEscolhida = Console.ReadLine()!;
     int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
-    if (opcaoEscolhidaNumerica == 1)
+
+    switch (opcaoEscolhidaNumerica)
     {
-        Console.WriteLine("Você digitou a opção " + opcaoEscolhida);
-    };
+        case 1:
+            RegistrarBanda();
+            break;
+        case 2:
+            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        case 3:
+            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        case 4:
+            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        case -1:
+            Console.WriteLine("Tchau tchau :)");
+            break;
+        default:
+            Console.WriteLine("Opção inválida");
+            break;
+    }
 }
 
+void RegistrarBanda()
+{
+    Console.Clear();
+    Console.WriteLine("Registro de bandas");
+    Console.Write("Digite o nome da banda que deseja registrar: ");
+    string nomeDaBanda = Console.ReadLine()!;
+    Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
+    Console.Clear();
+    Thread.Sleep(2000);
+    ExibirOpcoesDoMenu();
 
-ExibirMensagemDeBoasVindas();
+}
+
+ExibirLogo();
 ExibirOpcoesDoMenu();
