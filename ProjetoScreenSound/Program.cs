@@ -1,4 +1,4 @@
-﻿//MODULO 4 AULA 6
+﻿//MODULO 5 AULA 3
 // Screen Sound
 
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
@@ -47,7 +47,7 @@ void ExibirOpcoesDoMenu()
             AvaliarUmaBanda();
             break;
         case 4:
-            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+            ExibirMedia();
             break;
         case -1:
             Console.WriteLine("Tchau tchau :)");
@@ -105,25 +105,43 @@ void AvaliarUmaBanda()
     Console.Clear ();
     ExibirTituloDaOpcao("Avaliar uma Banda");
     Console.Write("Digite o nome da Banda Que deseja Avaliar");
-    string nomedabanda = Console.ReadLine();
-    if (bandasRegistradas.ContainsKey(nomedabanda) )
+    string nomedaBanda = Console.ReadLine();
+    if (bandasRegistradas.ContainsKey(nomedaBanda) )
     {
-        Console.Write($"Qual a nota que a banda merece {nomedabanda} merece ?");
+        Console.Write($"Qual a nota que a banda merece {nomedaBanda} merece ?");
         int nota= int.Parse(Console.ReadLine()!);
-        bandasRegistradas[nomedabanda].Add(nota);
-        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda: {nomedabanda}");
+        bandasRegistradas[nomedaBanda].Add(nota);
+        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda: {nomedaBanda}");
         Thread.Sleep(2000);
         Console.Clear();
         ExibirOpcoesDoMenu();
     }
     else
     {
-        Console.WriteLine($"A Banda {nomedabanda} não foi encontrada");
+        Console.WriteLine($"A Banda {nomedaBanda} não foi encontrada");
         Console.WriteLine("Digite uma tecla para voltar ao menu principal");
         Console.ReadKey ();
         Console.Clear();
     }
 
 }
+void ExibirMedia()
+{
+    Console.Clear();
+    ExibirTituloDaOpcao("Exibir Média da banda");
+    Console.Write("Digite o nome da banda que deseja exibir a média ");
+    string nomeDaBanda = Console.ReadLine()!;
+    if (bandasRegistradas.ContainsKey(nomeDaBanda) ) 
+    {
+
+    }
+    else
+    {
+        Console.WriteLine($"A Banda {nomeDaBanda} não foi encontrada");
+        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Console.Clear();
+    }
+};
 ExibirLogo();
 ExibirOpcoesDoMenu();
