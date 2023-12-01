@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matheus.souza\\Desktop\\Estudos matheus\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj": {}
+    "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matheus.souza\\Desktop\\Estudos matheus\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj": {
+    "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matheus.souza\\Desktop\\Estudos matheus\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj",
+        "projectUniqueName": "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj",
         "projectName": "ProjetoScreenSound",
-        "projectPath": "C:\\Users\\matheus.souza\\Desktop\\Estudos matheus\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj",
+        "projectPath": "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj",
         "packagesPath": "C:\\Users\\matheus.souza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matheus.souza\\Desktop\\Estudos matheus\\ProjetoScreenSound\\ProjetoScreenSound\\obj\\",
+        "outputPath": "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matheus.souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
