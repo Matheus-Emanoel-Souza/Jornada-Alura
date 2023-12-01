@@ -1,4 +1,4 @@
-﻿//MODULO 4 AULA 4
+﻿//MODULO 4 AULA 6
 // Screen Sound
 
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
@@ -108,7 +108,13 @@ void AvaliarUmaBanda()
     string nomedabanda = Console.ReadLine();
     if (bandasRegistradas.ContainsKey(nomedabanda) )
     {
-
+        Console.Write($"Qual a nota que a banda merece {nomedabanda} merece ?");
+        int nota= int.Parse(Console.ReadLine()!);
+        bandasRegistradas[nomedabanda].Add(nota);
+        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda: {nomedabanda}");
+        Thread.Sleep(2000);
+        Console.Clear();
+        ExibirOpcoesDoMenu();
     }
     else
     {
