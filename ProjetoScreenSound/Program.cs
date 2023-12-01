@@ -1,6 +1,14 @@
-﻿// Screen Sound
+﻿//MODULO 4 AULA 4
+// Screen Sound
+
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
-List<string> listaDasBandas = new List<string> { "U2", "The Beatles", "Calypso", "Iron Maiden","Ira"};
+//List<string> listaDasBandas = new List<string> { "U2", "The Beatles", "Calypso", "Iron Maiden","Ira"};
+Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string , List<int>>() ;
+bandasRegistradas.Add("U2", new List<int> { 10, 8, 9, 7 });
+bandasRegistradas.Add("The Beatles", new List<int> { 10, 8, 9, 7 });
+bandasRegistradas.Add("Calypso", new List<int> { 10, 8, 9, 7 });
+bandasRegistradas.Add("Iron Maiden", new List<int> { 10, 8, 9, 7 });
+bandasRegistradas.Add("Ira", new List<int> { 10, 8, 9, 7 });
 
 
 void ExibirLogo()
@@ -56,7 +64,7 @@ void RegistrarBanda()
     ExibirTituloDaOpcao("Registro das bandas");
     Console.Write("Digite o nome da banda que deseja registrar: ");
     string nomeDaBanda = Console.ReadLine()!;
-    listaDasBandas.Add(nomeDaBanda);
+    bandasRegistradas.Add(nomeDaBanda, new List<int> ());
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
     Thread.Sleep(4000);
     Console.Clear();
@@ -71,7 +79,7 @@ void MostrarBandasRegistradas()
     //{
     //    Console.WriteLine($"Banda: {listaDasBandas[i]}");
     //}
-    foreach (string banda in listaDasBandas) 
+    foreach (string banda in bandasRegistradas.Keys) 
     {
         Console.WriteLine($"Banda: {banda}");
     }
