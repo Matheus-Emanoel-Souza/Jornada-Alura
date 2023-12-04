@@ -3,5 +3,30 @@
     public string nome;
     public string artista;
     public int duracao;
-    public bool disponivel;
+    private bool disponivel;
+
+    public void EscreveDisponivel(bool value)
+    {
+        disponivel = value;
+    }
+
+    public bool LeDisponivel() 
+    {
+        return disponivel;
+    }
+    public void ExibirFichaTecnica()
+    {
+        Console.WriteLine($"Nomes da música {nome}");
+        Console.WriteLine($"Artista:{artista}");
+        Console.WriteLine($"Duração:{duracao}");
+        if (disponivel)
+        {
+            Console.WriteLine($"Disponível no plano");
+        }
+        else 
+        {
+            Console.WriteLine("Adquira o plano PLUS+");
+        }
+
+    }
 }
