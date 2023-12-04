@@ -1,4 +1,4 @@
-﻿//MODULO 5 AULA 3
+﻿//MODULO 5 AULA 4
 // Screen Sound
 
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
@@ -118,7 +118,7 @@ void AvaliarUmaBanda()
     }
     else
     {
-        Console.WriteLine($"A Banda {nomedaBanda} não foi encontrada");
+        Console.WriteLine($"\nA Banda {nomedaBanda} não foi encontrada");
         Console.WriteLine("Digite uma tecla para voltar ao menu principal");
         Console.ReadKey ();
         Console.Clear();
@@ -133,11 +133,16 @@ void ExibirMedia()
     string nomeDaBanda = Console.ReadLine()!;
     if (bandasRegistradas.ContainsKey(nomeDaBanda) ) 
     {
-
+        List<int>notasDaBanda = bandasRegistradas[nomeDaBanda];
+        Console.WriteLine($"A média da banda{nomeDaBanda} é {notasDaBanda.Average()}.");
+        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirOpcoesDoMenu();
     }
     else
     {
-        Console.WriteLine($"A Banda {nomeDaBanda} não foi encontrada");
+        Console.WriteLine($"\nA Banda {nomeDaBanda} não foi encontrada");
         Console.WriteLine("Digite uma tecla para voltar ao menu principal");
         Console.ReadKey();
         Console.Clear();
