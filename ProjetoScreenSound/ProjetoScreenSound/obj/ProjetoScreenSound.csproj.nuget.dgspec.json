@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj": {}
+    "C:\\Users\\matheus.souza\\source\\repos\\Jornada-Alura\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj": {
+    "C:\\Users\\matheus.souza\\source\\repos\\Jornada-Alura\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj",
+        "projectUniqueName": "C:\\Users\\matheus.souza\\source\\repos\\Jornada-Alura\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj",
         "projectName": "ProjetoScreenSound",
-        "projectPath": "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj",
+        "projectPath": "C:\\Users\\matheus.souza\\source\\repos\\Jornada-Alura\\ProjetoScreenSound\\ProjetoScreenSound\\ProjetoScreenSound.csproj",
         "packagesPath": "C:\\Users\\matheus.souza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matheus.souza\\Downloads\\Jornada-Alura-main\\Jornada-Alura-main\\ProjetoScreenSound\\ProjetoScreenSound\\obj\\",
+        "outputPath": "C:\\Users\\matheus.souza\\source\\repos\\Jornada-Alura\\ProjetoScreenSound\\ProjetoScreenSound\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matheus.souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -50,12 +56,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
