@@ -12,11 +12,12 @@ class Program
             // var linha = leitor.ReadLine();
             // var texto = leitor.ReadToEnd();
             // var numero = leitor.Read();
-
+            int i = 1;
             while (!leitor.EndOfStream)
             {
                 var linha = leitor.ReadLine();
-                Console.WriteLine(linha);
+                Console.WriteLine("linha "+i+": "+linha);
+                i++;
             }
         }
         Console.ReadLine();
