@@ -13,10 +13,11 @@ namespace ByteBankIO
         public double Saldo { get; private set; }
         public Cliente Titular { get; set; }
 
-        public ContaCorrente(int agencia, int numero)
+        public ContaCorrente(int agencia, int numero, string titular)
         {
             Agencia = agencia;
             Numero = numero;
+            Titular.Nome = titular;
         }
 
         public void Depositar(double valor)
