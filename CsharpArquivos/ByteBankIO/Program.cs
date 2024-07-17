@@ -42,5 +42,4 @@ partial class Program
         resultado.Depositar(saldo);
         return resultado;
     }
-
 }
