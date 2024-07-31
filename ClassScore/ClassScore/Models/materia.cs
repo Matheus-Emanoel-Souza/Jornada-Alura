@@ -15,6 +15,7 @@ public class materia
     [Required(ErrorMessage = "o nome do professor é obrigatório")]
     [StringLength(100)]
     public string professor { get; set; }
+    public int id { get; internal set; }
 
     //public double nota1 { get; set; }
     //public double nota2 { get; set; }

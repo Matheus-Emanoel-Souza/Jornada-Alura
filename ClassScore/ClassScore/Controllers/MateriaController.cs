@@ -8,9 +8,11 @@ namespace ClassScore.Controllers;
 public class MateriaController : ControllerBase
 {
     private static List<materia> materias = new List<materia>();
+    private static int id = 0;
     [HttpPost]
     public void AdicionaMateria([FromBody]materia materia)
     {
+        materia.id = id++;
         materias.Add(materia);
         ImprimeMaterias(materias);
     }       
