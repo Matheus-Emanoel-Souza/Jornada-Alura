@@ -8,7 +8,7 @@ namespace ClassScore.Controllers;
 public class MateriaController : ControllerBase
 {
     private static List<materia> materias = new List<materia>();
-    private static int id = 0;
+    private static int id = 1;
     [HttpPost]
     public void AdicionaMateria([FromBody]materia materia)
     {
@@ -32,5 +32,17 @@ public class MateriaController : ControllerBase
     public IEnumerable<materia> RecuperaFilme()
     {
         return materias;
+    }
+
+    [HttpGet("{id}/Pesquisa por ID")]
+    public materia? RecuperaMateria(int id)
+    {
+        return materias.FirstOrDefault(materia => materia.id == id);
+    }
+
+    [HttpGet("{nome}/Pesquisa por Nome")]
+    public ActionResult<materia> RecuperaMateriaNome(string nome)
+    {
+        return materias.FirstOrDefault(materia => materia.nome == nome);
     }
 }
