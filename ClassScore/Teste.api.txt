@@ -1,0 +1,332 @@
+[
+  {
+    "codigo": 12381,
+    "nome": "Expressão Gráfica",
+    "ch": 60,
+    "periodo": 1
+  },
+  {
+    "codigo": 12518,
+    "nome": "Lógica e Programação",
+    "ch": 90,
+    "periodo": 1
+  },
+  {
+    "codigo": 12521,
+    "nome": "Química Tecnológica e Materiais",
+    "ch": 55,
+    "periodo": 1
+  },
+  {
+    "codigo": 12519,
+    "nome": "Cálculo I",
+    "ch": 80,
+    "periodo": 1
+  },
+  {
+    "codigo": 12520,
+    "nome": "Projeto Interdisciplinar de Engenharia I",
+    "ch": 55,
+    "periodo": 1
+  },
+  {
+    "codigo": 12573,
+    "nome": "Projeto Interdisciplinar de Engenharia II",
+    "ch": 55,
+    "periodo": 2
+  },
+  {
+    "codigo": 12574,
+    "nome": "Cálculo II",
+    "ch": 55,
+    "periodo": 2
+  },
+  {
+    "codigo": 12575,
+    "nome": "Estática",
+    "ch": 80,
+    "periodo": 2
+  },
+  {
+    "codigo": 11969,
+    "nome": "Comunicação e Linguagem - EAD",
+    "ch": 60,
+    "periodo": 2
+  },
+  {
+    "codigo": 12093,
+    "nome": "Química Experimental",
+    "ch": 30,
+    "periodo": 2
+  },
+  {
+    "codigo": 12577,
+    "nome": "Projeto Interdisciplinar de Engenharia III",
+    "ch": 55,
+    "periodo": 3
+  },
+  {
+    "codigo": 12576,
+    "nome": "Álgebra",
+    "ch": 55,
+    "periodo": 3
+  },
+  {
+    "codigo": 12378,
+    "nome": "Probabilidade e Estatística",
+    "ch": 60,
+    "periodo": 3
+  },
+  {
+    "codigo": 12578,
+    "nome": "Circuitos Elétricos I",
+    "ch": 55,
+    "periodo": 3
+  },
+  {
+    "codigo": 12540,
+    "nome": "Engenharia de Software",
+    "ch": 55,
+    "periodo": 3
+  },
+  {
+    "codigo": 12402,
+    "nome": "Cálculo III",
+    "ch": 60,
+    "periodo": 4
+  },
+  {
+    "codigo": 12582,
+    "nome": "Empreendedorismo",
+    "ch": 60,
+    "periodo": 4
+  },
+  {
+    "codigo": 12581,
+    "nome": "Eletrônica Analógica I",
+    "ch": 55,
+    "periodo": 4
+  },
+  {
+    "codigo": 12403,
+    "nome": "Fenômenos de Transporte",
+    "ch": 90,
+    "periodo": 4
+  },
+  {
+    "codigo": 12580,
+    "nome": "Cinemática",
+    "ch": 80,
+    "periodo": 4
+  },
+  {
+    "codigo": 12052,
+    "nome": "Administração Geral - EAD",
+    "ch": 60,
+    "periodo": 5
+  },
+  {
+    "codigo": 12416,
+    "nome": "Dinâmica",
+    "ch": 60,
+    "periodo": 5
+  },
+  {
+    "codigo": 12583,
+    "nome": "Programação Aplicada",
+    "ch": 55,
+    "periodo": 5
+  },
+  {
+    "codigo": 12584,
+    "nome": "Sistemas Digitais I",
+    "ch": 55,
+    "periodo": 5
+  },
+  {
+    "codigo": 12051,
+    "nome": "Gerenciamento de Projetos - EAD",
+    "ch": 60,
+    "periodo": 5
+  },
+  {
+    "codigo": 12539,
+    "nome": "Algoritmos e Estruturas de Dados I",
+    "ch": 55,
+    "periodo": 5
+  },
+  {
+    "codigo": 12546,
+    "nome": "Banco de Dados I",
+    "ch": 55,
+    "periodo": 5
+  },
+  {
+    "codigo": 12548,
+    "nome": "Projeto Interdisciplinar de TI IV",
+    "ch": 60,
+    "periodo": 6
+  },
+  {
+    "codigo": 12544,
+    "nome": "Algoritmos e Estruturas de Dados II",
+    "ch": 55,
+    "periodo": 6
+  },
+  {
+    "codigo": 12420,
+    "nome": "Controle de Sistemas",
+    "ch": 60,
+    "periodo": 6
+  },
+  {
+    "codigo": 12684,
+    "nome": "Teoria da Computação e Compiladores",
+    "ch": 55,
+    "periodo": 6
+  },
+  {
+    "codigo": 12417,
+    "nome": "Materiais e Sensores",
+    "ch": 60,
+    "periodo": 6
+  },
+  {
+    "codigo": 12586,
+    "nome": "Eletrônica Analógica II",
+    "ch": 55,
+    "periodo": 6
+  },
+  {
+    "codigo": 12552,
+    "nome": "Sistemas Operacionais",
+    "ch": 90,
+    "periodo": 6
+  },
+  {
+    "codigo": 12051,
+    "nome": "Gerenciamento de Projetos - EAD",
+    "ch": 60,
+    "periodo": 7
+  },
+  {
+    "codigo": 12557,
+    "nome": "Segurança e Auditoria de Sistemas",
+    "ch": 55,
+    "periodo": 7
+  },
+  {
+    "codigo": 12111,
+    "nome": "Direito Empresarial - EAD",
+    "ch": 60,
+    "periodo": 7
+  },
+  {
+    "codigo": 12556,
+    "nome": "Projeto Interdisciplinar de TI V",
+    "ch": 85,
+    "periodo": 7
+  },
+  {
+    "codigo": 12590,
+    "nome": "Sistemas Embarcados",
+    "ch": 55,
+    "periodo": 7
+  },
+  {
+    "codigo": 12589,
+    "nome": "Resistência dos Materiais",
+    "ch": 30,
+    "periodo": 7
+  },
+  {
+    "codigo": 12418,
+    "nome": "Instrumentação Industrial",
+    "ch": 60,
+    "periodo": 8
+  },
+  {
+    "codigo": 12547,
+    "nome": "Redes de Computadores I",
+    "ch": 55,
+    "periodo": 8
+  },
+  {
+    "codigo": 12566,
+    "nome": "Analytics – Inteligência de Negócios",
+    "ch": 80,
+    "periodo": 8
+  },
+  {
+    "codigo": 12595,
+    "nome": "Sistemas de Controle Inteligente",
+    "ch": 30,
+    "periodo": 8
+  },
+  {
+    "codigo": 12549,
+    "nome": "Ética, Informática e Sociedade",
+    "ch": 60,
+    "periodo": 8
+  },
+  {
+    "codigo": 12067,
+    "nome": "Humanidades, Ciências Sociais e Cidadania - EAD",
+    "ch": 60,
+    "periodo": 8
+  },
+  {
+    "codigo": 12598,
+    "nome": "Automação",
+    "ch": 55,
+    "periodo": 9
+  },
+  {
+    "codigo": 12734,
+    "nome": "Estudos Ambientais",
+    "ch": 60,
+    "periodo": 9
+  },
+  {
+    "codigo": 12408,
+    "nome": "Optativa - ECP",
+    "ch": 30,
+    "periodo": 9
+  },
+  {
+    "codigo": 12564,
+    "nome": "Sistemas Distribuídos e IOT",
+    "ch": 55,
+    "periodo": 9
+  },
+  {
+    "codigo": 12565,
+    "nome": "Pesquisa Operacional",
+    "ch": 55,
+    "periodo": 9
+  },
+  {
+    "codigo": 12119,
+    "nome": "Introdução à Visão Computacional",
+    "ch": 30,
+    "periodo": 9
+  },
+  {
+    "codigo": 12118,
+    "nome": "Gestão de Processos e Qualidade",
+    "ch": 60,
+    "periodo": 9
+  },
+  {
+    "codigo": 12568,
+    "nome": "Tópicos Avançados em Engenharia da Computação",
+    "ch": 55,
+    "periodo": 9
+  },
+  {
+    "codigo": 12576,
+    "nome": "Sistemas Digitais II",
+    "ch": 30,
+    "periodo": 9
+  }
+]

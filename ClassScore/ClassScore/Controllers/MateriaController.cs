@@ -7,42 +7,58 @@ namespace ClassScore.Controllers;
 [Route("[controller]")]
 public class MateriaController : ControllerBase
 {
-    private static List<materia> materias = new List<materia>();
+
+    private static List<Materia> materias = new List<Materia>();
     private static int id = 1;
-    [HttpPost]
-    public void AdicionaMateria([FromBody]materia materia)
+
+    [HttpPost("Adiciona matéria")]
+    public void AdicionaMateria([FromBody] Materia materia)
     {
-        materia.id = id++;
         materias.Add(materia);
         ImprimeMaterias(materias);
-    }       
+    }
 
-    private void ImprimeMaterias(List<materia> materias)
+    [HttpPost("/lista de matérias")]
+    public void AdicionaMaterias([FromBody] List<Materia> novasMaterias)
     {
-        foreach (materia materia in materias)
+        foreach (var materia in novasMaterias)
         {
-            Console.Clear();
-            Console.WriteLine($"Titulo da Matéria:{materia.nome}");
-            Console.WriteLine($"Média da Matéria:{materia.media}");
-            Console.WriteLine($"Professor da Matéria:{materia.professor}");
+            materias.Add(materia);
+        }
+        ImprimeMaterias(materias);
+    }
+
+    private void ImprimeMaterias(List<Materia> materias)
+    {
+        
+        foreach (Materia materia in materias)
+        {
+            Console.WriteLine($"codigo:{materia.Codigo}");
+            Console.WriteLine($"nome:{materia.Nome}");
+            Console.WriteLine($"ch:{materia.Ch}");
+            Console.WriteLine($"periodo:{materia.Periodo}");
+            Console.WriteLine("-----------------------------------------------------------------");
         }
     }
 
-    [HttpGet]
-    public IEnumerable<materia> RecuperaFilme()
+    [HttpGet("{codigo}/Pesquisa por codigo")]
+    public Materia? RecuperaMateria(int codigo)
     {
-        return materias;
+        return materias.FirstOrDefault(materia => materia.Codigo == codigo);
     }
 
-    [HttpGet("{id}/Pesquisa por ID")]
-    public materia? RecuperaMateria(int id)
+    [HttpGet("{nomedadisciplina}/Pesquisa por Nome")]
+    public ActionResult<Materia> RecuperaMateriaNome(string nome)
     {
-        return materias.FirstOrDefault(materia => materia.id == id);
+        return materias.FirstOrDefault(materia => materia.Nome == nome);
     }
 
-    [HttpGet("{nome}/Pesquisa por Nome")]
-    public ActionResult<materia> RecuperaMateriaNome(string nome)
+    [HttpGet("{cargahoraria}/ListaDeMateriasComcargahorariaIgual")]
+    public LinkedList<Materia> RecuperaMateriasMedia(double cargahoraria)
     {
-        return materias.FirstOrDefault(materia => materia.nome == nome);
+    var materiasComMediaIgual = materias.Where(m => m.Ch == cargahoraria).ToList();
+    LinkedList<Materia> linkedListMaterias = new LinkedList<Materia>(materiasComMediaIgual);
+    return linkedListMaterias;
     }
+    
 }
