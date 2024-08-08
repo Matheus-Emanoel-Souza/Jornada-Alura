@@ -33,10 +33,10 @@ public class MateriaController : ControllerBase
         
         foreach (Materia materia in materias)
         {
-            Console.WriteLine($"codigo:{materia.Codigo}");
-            Console.WriteLine($"nome:{materia.Nome}");
+            Console.WriteLine($"codigo:{materia.ID_Disciplina}");
+            Console.WriteLine($"nome:{materia.Nomedadisciplina}");
             Console.WriteLine($"ch:{materia.Ch}");
-            Console.WriteLine($"periodo:{materia.Periodo}");
+            Console.WriteLine($"periodo:{materia.PeriodoMateria}");
             Console.WriteLine("-----------------------------------------------------------------");
         }
     }
@@ -44,13 +44,13 @@ public class MateriaController : ControllerBase
     [HttpGet("{codigo}/Pesquisa por codigo")]
     public Materia? RecuperaMateria(int codigo)
     {
-        return materias.FirstOrDefault(materia => materia.Codigo == codigo);
+        return materias.FirstOrDefault(materia => materia.ID_Disciplina == codigo);
     }
 
-    [HttpGet("{nomedadisciplina}/Pesquisa por Nome")]
+    [HttpGet("{nomedadisciplina}/Pesquisa por Nomedadisciplina")]
     public ActionResult<Materia> RecuperaMateriaNome(string nome)
     {
-        return materias.FirstOrDefault(materia => materia.Nome == nome);
+        return materias.FirstOrDefault(materia => materia.Nomedadisciplina == nome);
     }
 
     [HttpGet("{cargahoraria}/ListaDeMateriasComcargahorariaIgual")]
