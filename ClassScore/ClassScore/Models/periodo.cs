@@ -8,6 +8,5 @@ namespace ClassScore.Models
         [Key]
         [Required]
         public int Numero { get; set; }
-        public virtual ICollection<Materia> Materias { get; set; } = new List<Materia>();
     }
 }
