@@ -23,9 +23,21 @@ public class MateriaController : ControllerBase
     {
         foreach (var materia in novasMaterias)
         {
-            materias.Add(materia);
+            ValidaMateria(materia);
         }
+
         ImprimeMaterias(materias);
+    }
+
+    private void ValidaMateria(Materia materia)
+    {
+        foreach(Materia Materiaexp in materias)
+        {
+            if(Materiaexp.nome == materia.nome!)
+            {
+                materias.Add(Materiaexp);
+            }
+        }
     }
 
     private void ImprimeMaterias(List<Materia> materias)
@@ -109,7 +121,4 @@ public class MateriaController : ControllerBase
         }
         return Ok(materias);
     }
-
-
-    
 }

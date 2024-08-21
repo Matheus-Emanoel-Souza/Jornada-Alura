@@ -21,7 +21,9 @@ namespace ClassScore.Models
 
         [Required(ErrorMessage = "O período da matéria é obrigatório")]
         [Range(1, 10, ErrorMessage = "O período deve estar entre 1 e 10")]
-        public int periodo { get; set; }
+        public int ?periodo { get; set; }
+
+        public char[] ?conteudo { get; set;}
     }
 }
 
