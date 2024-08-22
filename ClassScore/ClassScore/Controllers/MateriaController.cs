@@ -1,5 +1,7 @@
-﻿using ClassScore.Models;
+﻿using ClassScore.data;
+using ClassScore.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
 namespace ClassScore.Controllers;
@@ -8,14 +10,18 @@ namespace ClassScore.Controllers;
 public class MateriaController : ControllerBase
 {
 
-    private static List<Materia> materias = new List<Materia>();
-    private static int id = 1;
+    private materiacontext _context;
+
+    public MateriaController(materiacontext context)
+    {
+        _context = context;
+    }
 
     [HttpPost("Adiciona matéria")]
     public void AdicionaMateria([FromBody] Materia materia)
     {
-        materias.Add(materia);
-        ImprimeMaterias(materias);
+        _context.materia.Add(materia);
+        //ImprimeMaterias(); => metodo trocado por inumerable.
     }
 
     [HttpPost("/lista de matérias")]
@@ -25,17 +31,20 @@ public class MateriaController : ControllerBase
         {
             ValidaMateria(materia);
         }
+    }
 
-        ImprimeMaterias(materias);
+    public IEnumerable<Materia> RecupMateria()
+    {
+     return _context.materia;
     }
 
     private void ValidaMateria(Materia materia)
     {
-        foreach(Materia Materiaexp in materias)
+        foreach(Materia Materiaexp in _context.materia)
         {
             if(Materiaexp.nome == materia.nome!)
             {
-                materias.Add(Materiaexp);
+                _context.materia.Add(Materiaexp);
             }
         }
     }
@@ -56,7 +65,7 @@ public class MateriaController : ControllerBase
     [HttpGet("{Cdigitado}/PesquisaCodigo")]
     public ActionResult<Materia> RecuperaMateria(int Cdigitado)
     {
-        var materia = materias.FirstOrDefault(m => m.codigo == Cdigitado);
+        var materia = _context.materia.FirstOrDefault(m => m.codigo == Cdigitado);
         if (materia == null)
         {
             return NotFound(); // Retorna 404 se não encontrar a matéria com o código especificado
@@ -67,7 +76,7 @@ public class MateriaController : ControllerBase
     [HttpGet("/Pesquisa por Nomedadisciplina")]
     public ActionResult<Materia> RecuperaMateriaNome(string nomedigitado)
     {
-        var materia = materias.FirstOrDefault(m => string.Equals(m.nome.Trim(), nomedigitado.Trim(), StringComparison.OrdinalIgnoreCase));
+        var materia = _context.materia.FirstOrDefault(m => string.Equals(m.nome.Trim(), nomedigitado.Trim(), StringComparison.OrdinalIgnoreCase));
 
         if (materia == null)
         {
@@ -81,20 +90,21 @@ public class MateriaController : ControllerBase
     [HttpGet("CargaHorariaTotalCurso")]
     public ActionResult<List<Materia>> cargaHorariaTotal()
     {
-        if (materias.Count == 0)
+        if (_context.materia.ToList().Count == 0)
         {
             return Ok("Não há pautas");
         }
         else
         {
             int cargahoraria = 0;
-            foreach (var materia in materias)
+            foreach (var materia in _context.materia)
             {
                 cargahoraria += materia.ch;
             }
             return Ok(cargahoraria);
         }
     }
+
     [HttpGet("FiltroHoras")]
     public ActionResult<List<Materia>> FiltroHoras(int horas)
     {
@@ -103,7 +113,7 @@ public class MateriaController : ControllerBase
             return Ok("Sem horas"); 
         }
         
-        List<Materia> materiasComHorasIguais = materias.Where(Materia => Materia.ch == horas).ToList();
+        List<Materia> materiasComHorasIguais = _context.materia.Where(Materia => Materia.ch == horas).ToList();
         
         if(materiasComHorasIguais.Count == 0)
         {
@@ -115,10 +125,11 @@ public class MateriaController : ControllerBase
     [HttpGet("ListadeMaterias")]
     public ActionResult<List<Materia>> RetornarListaDeMaterias()
     {
-        if (materias.Count == 0) 
+        if (_context.materia.ToList().Count == 0) 
         {
             return Ok("Não há pautas");
         }
-        return Ok(materias);
+        return Ok(_context.materia);
+    
     }
 }
