@@ -1,4 +1,11 @@
+using ClassScore.data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("materiaconection");
+
+builder.Services.AddDbContext<materiacontext>(opts => opts.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 // Configuração dos Serviços
 ConfigureServices(builder.Services);
