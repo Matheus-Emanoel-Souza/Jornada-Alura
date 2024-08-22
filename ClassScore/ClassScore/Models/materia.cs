@@ -6,8 +6,11 @@ namespace ClassScore.Models
     [Table("employee")]
     public class Materia
     {
+        
+
         [Required(ErrorMessage = "O código da matéria é obrigatório")]
         [Range(10000, 99999, ErrorMessage = "O código da matéria deve ter 5 dígitos")]
+        [Key]
         public int codigo { get; set; }
 
         [Required(ErrorMessage = "O nome da disciplina é obrigatório")]
