@@ -125,6 +125,7 @@ public class MateriaController : ControllerBase
             return Ok($"{materia.nome} não pode ser registrada ! \n" +
                 $"Matéria já Registrada!!");
         }
+        _context.SaveChanges();
         return Ok();
     }
 
