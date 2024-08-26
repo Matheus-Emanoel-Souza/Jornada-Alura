@@ -1,17 +1,20 @@
 .barra {
-  width: calc(100% - 50px); /* Ajusta a largura da barra */
-  height: 50px;
-  background-color: #7c7979;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin-left: 50px; /* Espaçamento da barra do lado esquerdo */
-  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  width: 90%; /* Define a largura da barra como 90% da largura do contêiner pai, geralmente o corpo da página */
+  max-width: 1200px; /* Define uma largura máxima para a barra. Não deixará a barra mais larga que 1200 pixels, mesmo que 90% da tela seja maior */
+  height: 50px; /* Define a altura da barra como 50 pixels */
+  background-color: #7c7979; /* Define a cor de fundo da barra como um tom de cinza (#7c7979) */
+  display: flex; /* Usa o modelo de layout flexível para organizar o conteúdo dentro da barra */
+  align-items: center; /* Alinha os itens verticalmente no centro da barra */
+  justify-content: space-between; /* Distribui os itens horizontalmente com o máximo de espaço possível entre eles */
+  padding: 0 20px; /* Adiciona 20 pixels de preenchimento à esquerda e à direita da barra */
+  margin: 0 auto; /* Centraliza a barra horizontalmente dentro do contêiner pai, definindo margens automáticas à esquerda e à direita */
+  box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura total do elemento, para evitar que o tamanho total exceda a largura definida */
 }
 
+
+
 .barra img {
-  width: 40px;
+  width: 50px;
   height: 40px;
   margin-right: 20px;
 }
