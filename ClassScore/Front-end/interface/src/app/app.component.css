@@ -11,8 +11,6 @@
   box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura total do elemento, para evitar que o tamanho total exceda a largura definida */
 }
 
-
-
 .barra img {
   width: 50px;
   height: 40px;
@@ -36,8 +34,8 @@
 .barra .botoes button {
   padding: 10px 15px;
   font-size: 12px;
-  background-color: #5a5858;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 4, 243);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -45,4 +43,8 @@
 
 .barra .botoes button:hover {
   background-color: #444242;
+}
+
+.h1{
+  align-items: center;
 }

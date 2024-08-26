@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -11,6 +12,13 @@ import { RouterOutlet } from '@angular/router';
 
 export class AppComponent {
   title = 'CLASS SORCE';
-  public todos: any[] = [];
+
+  // Declare a variável todos e inicialize com valores
+  public todos = [
+    { title: 'Tarefa 1' },
+    { title: 'Tarefa 2' },
+    { title: 'Tarefa 3' }
+  ];
 }
+
 
