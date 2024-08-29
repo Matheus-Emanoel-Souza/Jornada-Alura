@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos comuns a todas as divs */
+.div-padrao {
+  border-radius: 50px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilos específicos para cada div */
+.div1 {
+  border: 2px solid lightgreen;
+  align-content: center;
+
+}
+
+.div2{
+  border: 2px solid lightcoral;  height: 50px;
+  display: flex; /* Define a div como flex container */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente (opcional) */
+}
+
+.div2 img {
+  width: 10%;
+  height: 100%;
+}
+
+.div3 {
+  border: 2px solid lightsalmon;
+}
+
+/* Restante do seu CSS */
+body {
+  border-radius: 10px; /* Adiciona uma borda arredondada ao corpo da página */
+  color: rgb(0, 0, 0); /* Muda a cor do texto para preto */
+  position: relative;
+}
+
+.botao {
+  border: 1px solid transparent; /* Adiciona uma borda transparente aos botões */
+  transition: 0.5s; /* Adiciona uma transição de 0.5 segundos aos botões */
+}
+
+.botao:hover {
+  border: 1px solid lightblue; /* Muda a cor da borda para azul claro quando o mouse passa sobre o botão */
+  color: lightblue; /* Muda a cor do texto para azul claro quando o mouse passa sobre o botão */
+}
+
+.background {
+  height: 100vh; /* Define a altura do div para 100% da viewport */
+  width: 100vw; /* Define a largura do div para 100% da viewport */
+  background-size: cover; /* Ajusta a imagem de background para cobrir todo o div */
+  margin-top: 20px; /* Adiciona uma distância de 20px entre o novo div e os outros divs */
+}
+
+.barra {
+  display: flex; /* Adiciona display flex à barra */
+  align-items: center; /* Centraliza verticalmente os elementos filhos */
+  justify-content: space-around;
+}
+
+.barra img {
+  width: 10%; /* Define a largura da imagem para 20% */
+  height: auto; /* Ajusta a altura da imagem automaticamente */
+  border-radius: 5%; /* Adiciona uma borda arredondada à imagem */
+}
+
