@@ -1,22 +1,126 @@
+/*HTML NO GERAL*/
+html{
+  height: 100vw;
+  background: linear-gradient(135deg, #fc4c02, #101820);
+  padding: 0.5% 1%; /* Define o espaçamento interno */
+}
+/*Preciso urgentemente melhorar minha estilização!*/
+
 .corpo{
   height: auto;
   width: auto;
 }
 
-/* Estilos para .div1 */
-.corpo #div1{
-    border: 5px solid rgb(255, 255, 255); /* Define a borda da div */
-    width: 100%; /* Define a largura para 100% da viewport */
-    background-size: cover; /* Ajusta o background para cobrir toda a div */
-    display: flex; /* Define a div como flex container */
-    align-items:start; /* Centraliza os itens verticalmente (opcional) */
-    justify-content:first baseline; /* Centraliza os itens horizontalmente */
-    height: auto; /* Define a altura da div */
+/* Estilos para .background */
+.background {
+  height: 100vh; /* Define a altura para 100% da viewport */
+  width: 100vw; /* Define a largura para 100% da viewport */
+  background-size: cover; /* Ajusta o background para cobrir toda a div */
+  margin-top: 20px; /* Adiciona uma margem superior */
 }
+
+.barra {
+  display: flex; /* Define a div como flex container */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+  width: 100%; /* Define a largura para 100% */
+  padding: 20px; /* Define o espaçamento interno */
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+/* Estilos para as imagens dentro de .barra */
+.barra img {
+  width: 50%; /* Define a largura da imagem */
+  border-radius: 30%; /* Adiciona uma borda arredondada */
+}
+
+/* Estilos para #divdaimagem */
+.barra #divdaimagem {
+  width: 10%; /* Define a largura */
+  height: 10%; /* Define a altura */
+}
+
+/* Estilos para os inputs dentro de .barra */
+.barra input {
+  border-radius: 15px; /* Define a borda arredondada */
+  outline: 4px solid #FEBF00; /* Define a cor da borda ao focar */
+  border: 0; /* Remove a borda padrão */
+  font-family: "Roboto", sans-serif; /* Define a família da fonte */
+  background-color: #ffffff; /* Define a cor de fundo */
+  outline-offset: 9px; /* Define a distância do contorno */
+  padding: 10px 1rem; /* Define o espaçamento interno */
+  transition: 0.25s; /* Define a transição */
+  width: 60%; /* Define a largura */
+}
+
+/* Estilos para os inputs ao focar dentro de .barra */
+.barra input:focus {
+  outline-offset: 5px; /* Aumenta a distância do contorno ao focar */
+  background-color: #ffffff; /* Define a cor de fundo ao focar */
+}
+
+/* Estilos para os botões dentro de .barra */
+.barra button {
+  position: relative; /* Define o posicionamento relativo */
+  display: inline-block; /* Define o display como inline-block */
+  margin: 2%; /* Define a margem externa */
+  padding: 15px 20px; /* Define o espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  font-size: 18px; /* Define o tamanho da fonte */
+  letter-spacing: 1px; /* Ajusta o espaçamento entre letras */
+  text-decoration: none; /* Remove a decoração do texto */
+  color: #725AC1; /* Define a cor do texto */
+  background: transparent; /* Define o fundo transparente */
+  cursor: pointer; /* Define o cursor como pointer */
+  transition: ease-out 0.5s; /* Define a transição */
+  border: 2px solid #725AC1; /* Define a borda */
+  border-radius: 50px; /* Define a borda arredondada */
+  box-shadow: inset 0 0 0 0 #725AC1; /* Define a sombra interna */
+  white-space: nowrap; /* Garante que o texto não quebre linha */
+}
+
+/* Estilos para o hover dos botões dentro de .barra */
+.barra button:hover {
+  color: white; /* Define a cor do texto ao passar o mouse */
+  box-shadow: inset 0 -100px 0 0 #725AC1; /* Define a sombra interna no hover */
+}
+
+/* Estilos para os botões quando ativos */
+button:active {
+  transform: scale(0.9); /* Reduz o tamanho ao ser pressionado */
+}
+
+/* Estilos para #divbarra dentro de .barra */
+.barra #divbarra {
+  width: 60%; /* Define a largura */
+  position: relative; /* Define o posicionamento relativo */
+  display: flex; /* Define como flex container */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilos para #divbotao dentro de .barra */
+.barra #divbotao {
+  display: flex; /* Define como flex container */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  width: 18%; /* Define a largura */
+  padding: 10px; /* Define o espaçamento interno */
+}
+
+/* Estilos para .div1 */
+.corpo #div1 {
+  box-shadow: 0 0 15px #faa35c; /* Adiciona uma sombra ao redor da div */
+  width: 100%; /* Define a largura para 100% da viewport */
+  background-size: cover; /* Ajusta o background para cobrir toda a div */
+  display: flex; /* Define a div como flex container */
+  align-items: start; /* Alinha os itens ao topo */
+  justify-content: space-between; /* Centraliza os itens horizontalmente */
+  height: auto; /* Define a altura da div */
+}
+
 
 .corpo #div1 #img2{
   height: auto; /* Define a altura para 100% da viewport */
-  width: 50%; /* Define a largura para 100% da viewport */
+  width: 170%; /* Define a largura para 100% da viewport */
   display: inline-block; /* Para que o sombreamento siga o tamanho da imagem */
   border-radius: 10%; /* Arredonda as bordas da imagem, tornando-a circular */
   overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
@@ -25,8 +129,16 @@
 
 .corpo #div1 #img2 img{
   width: 100%; /* Ajusta a imagem para ocupar toda a div */
-  height: 100%; /* Mantém a proporção da imagem */
   display: block; /* Remove espaços em branco indesejados ao redor da imagem */
+}
+
+#texto_introdução{
+  border: 5px solid rgb(238, 17, 17); /* Define a borda da div */
+  width: 110%;
+  font-size: 25px;
+  color: #ffffff;
+  padding: auto;
+  font-family: "Roboto", sans-serif; /* Define a família da fonte */
 }
 
 /* Estilos para .div2 */
@@ -68,106 +180,6 @@
   transform: scale(0.9); /* Reduz o tamanho ao ser pressionado */
   color: #725AC1; /* Define a cor do texto */
 }
-
-
-
-/* Estilos para .background */
-.background {
-  height: 100vh; /* Define a altura para 100% da viewport */
-  width: 100vw; /* Define a largura para 100% da viewport */
-  background-size: cover; /* Ajusta o background para cobrir toda a div */
-  margin-top: 20px; /* Adiciona uma margem superior */
-}
-
-/* Estilos para .barra */
-.barra {
-  display: flex; /* Define a div como flex container */
-  align-items: center; /* Centraliza os itens verticalmente */
-  justify-content: space-between; /* Distribui os itens com espaço entre eles */
-  width: 100%; /* Define a largura para 100% */
-  padding: 20px; /* Define o espaçamento interno */
-  box-sizing: border-box; /* Inclui o padding no tamanho total */
-}
-
-/* Estilos para as imagens dentro de .barra */
-.barra img {
-  width: 100%; /* Define a largura da imagem */
-  height: 100%; /* Ajusta a altura da imagem */
-  border-radius: 30%; /* Adiciona uma borda arredondada */
-}
-
-/* Estilos para #divdaimagem */
-#divdaimagem {
-  width: 10%; /* Define a largura */
-  height: 10%; /* Define a altura */
-}
-
-/* Estilos para os botões dentro de .barra */
-.barra button {
-  position: relative; /* Define o posicionamento relativo */
-  display: inline-block; /* Define o display como inline-block */
-  margin: 2%; /* Define a margem externa */
-  padding: 15px 20px; /* Define o espaçamento interno */
-  text-align: center; /* Centraliza o texto */
-  font-size: 18px; /* Define o tamanho da fonte */
-  letter-spacing: 1px; /* Ajusta o espaçamento entre letras */
-  text-decoration: none; /* Remove a decoração do texto */
-  color: #725AC1; /* Define a cor do texto */
-  background: transparent; /* Define o fundo transparente */
-  cursor: pointer; /* Define o cursor como pointer */
-  transition: ease-out 0.5s; /* Define a transição */
-  border: 2px solid #725AC1; /* Define a borda */
-  border-radius: 50px; /* Define a borda arredondada */
-  box-shadow: inset 0 0 0 0 #725AC1; /* Define a sombra interna */
-  white-space: nowrap; /* Garante que o texto não quebre linha */
-}
-
-/* Estilos para o hover dos botões dentro de .barra */
-.barra button:hover {
-  color: white; /* Define a cor do texto ao passar o mouse */
-  box-shadow: inset 0 -100px 0 0 #725AC1; /* Define a sombra interna no hover */
-}
-
-/* Estilos para os botões quando ativos */
-button:active {
-  transform: scale(0.9); /* Reduz o tamanho ao ser pressionado */
-}
-
-/* Estilos para #divbarra dentro de .barra */
-.barra #divbarra {
-  width: 50%; /* Define a largura */
-  position: relative; /* Define o posicionamento relativo */
-  display: flex; /* Define como flex container */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-}
-
-/* Estilos para os inputs dentro de .barra */
-.barra input {
-  border-radius: 50px; /* Define a borda arredondada */
-  outline: 2px solid #FEBF00; /* Define a cor da borda ao focar */
-  border: 0; /* Remove a borda padrão */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Define a família da fonte */
-  background-color: #ffffff; /* Define a cor de fundo */
-  outline-offset: 3px; /* Define a distância do contorno */
-  padding: 10px 1rem; /* Define o espaçamento interno */
-  transition: 0.25s; /* Define a transição */
-  width: 60%; /* Define a largura */
-}
-
-/* Estilos para os inputs ao focar dentro de .barra */
-.barra input:focus {
-  outline-offset: 5px; /* Aumenta a distância do contorno ao focar */
-  background-color: #ffffff; /* Define a cor de fundo ao focar */
-}
-
-/* Estilos para #divbotao dentro de .barra */
-.barra #divbotao {
-  display: flex; /* Define como flex container */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  width: 18%; /* Define a largura */
-  padding: 10px; /* Define o espaçamento interno */
-}
-
 
 /*REDES SOCIAIS*/
 .redessociais {
@@ -299,81 +311,3 @@ button:active {
 .corpo #div3 .redessociais{
   align-items: center; /* Centraliza os itens verticalmente */
 }
-
-html{
-  height: 100vw;
-  background: linear-gradient(135deg, #fc4c02, #101820);
-  padding: 0.5% 1%; /* Define o espaçamento interno */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CHATS COR*/
-/* From Uiverse.io by suleymanlaarabidev */
-.card {
-  width: 100%;
-  height:300px;
-  background: rgb(103, 225, 255);
-  transition: all 0.4s;
-  border-radius: 10px;
-  /* box-shadow: 0px 0px 10px 5px  rgba(7, 230, 230, 0); */
-  font-size: 30px;
-  font-weight: 900;
-}
-
-.card:hover {
-  border-radius: 15px;
-  /* cursor: pointer; */
-  transform: scale(1.2);
-  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
-  background: rgb(103, 151, 255);
-}
-
-.first-content {
-  height: 100%;
-  width: 100%;
-  transition: all 0.4s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  border-radius: 15px;
-}
-
-.card:hover .first-content {
-  height: 0px;
-  opacity: 0;
-}
-
-.second-content {
-  height: 0%;
-  width: 100%;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  transition: all 0.4s;
-  font-size: 0px;
-  transform: rotate(90deg) scale(-1);
-}
-
-.card:hover .second-content {
-  opacity: 1;
-  height: 100%;
-  font-size: 1.8rem;
-  transform: rotate(0deg);
-}
-
