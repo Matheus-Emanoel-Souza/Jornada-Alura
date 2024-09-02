@@ -1,15 +1,50 @@
+:root{
+
+  --cor-primaria:#fc4c02;
+  --cor-secundaria:#ff4d72;
+  --cor-terciaria:#c0e5ee;
+
+  --cor-preto:#101820;
+  --cor-rosa:#ff4d72;
+  --cor-Azul-escuro:#04245b;
+  --cor-azul-claro:#c0e5ee;
+  --cor-laranja:#fc4c02;
+  --rosa-forte:#fe1f74;
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .barra {
+    flex-direction: column;
+  }
+  .barra img {
+    width: 100%;
+  }
+}
+
+/* Tablet devices (min-width: 769px) and (max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .corpo #div1 {
+    flex-wrap: wrap;
+  }
+}
+
+/* Desktop devices (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .barra {
+    justify-content: space-between;
+  }
+}
+
 /*HTML NO GERAL*/
 html{
-  height: 100vw;
-  background: linear-gradient(135deg, #fc4c02, #101820);
-  padding: 0.5% 1%; /* Define o espaçamento interno */
+
+  background: linear-gradient(180deg, var(--cor-Azul-escuro), var(--cor-preto) );
+  padding: 0.5% 1.5%; /* Define o espaçamento interno */
 }
 /*Preciso urgentemente melhorar minha estilização!*/
 
-.corpo{
-  height: auto;
-  width: auto;
-}
+
 
 /* Estilos para .background */
 .background {
@@ -43,7 +78,7 @@ html{
 /* Estilos para os inputs dentro de .barra */
 .barra input {
   border-radius: 15px; /* Define a borda arredondada */
-  outline: 4px solid #FEBF00; /* Define a cor da borda ao focar */
+  outline: 4px solid var(--cor-preto); /* Define a cor da borda ao focar */
   border: 0; /* Remove a borda padrão */
   font-family: "Roboto", sans-serif; /* Define a família da fonte */
   background-color: #ffffff; /* Define a cor de fundo */
@@ -66,23 +101,23 @@ html{
   margin: 2%; /* Define a margem externa */
   padding: 15px 20px; /* Define o espaçamento interno */
   text-align: center; /* Centraliza o texto */
-  font-size: 18px; /* Define o tamanho da fonte */
+  font-size: 20px; /* Define o tamanho da fonte */
   letter-spacing: 1px; /* Ajusta o espaçamento entre letras */
   text-decoration: none; /* Remove a decoração do texto */
-  color: #725AC1; /* Define a cor do texto */
+  color: #ffffff; /* Define a cor do texto */
   background: transparent; /* Define o fundo transparente */
   cursor: pointer; /* Define o cursor como pointer */
   transition: ease-out 0.5s; /* Define a transição */
-  border: 2px solid #725AC1; /* Define a borda */
+  border: 2px solid var(--cor-terciaria); /* Define a borda */
   border-radius: 50px; /* Define a borda arredondada */
-  box-shadow: inset 0 0 0 0 #725AC1; /* Define a sombra interna */
+  box-shadow: inset 0 0 0 0 var(--cor-laranja); /* Define a sombra interna */
   white-space: nowrap; /* Garante que o texto não quebre linha */
 }
 
 /* Estilos para o hover dos botões dentro de .barra */
 .barra button:hover {
   color: white; /* Define a cor do texto ao passar o mouse */
-  box-shadow: inset 0 -100px 0 0 #725AC1; /* Define a sombra interna no hover */
+  box-shadow: inset 0 -100px 0 0 var(--cor-laranja); /* Define a sombra interna no hover */
 }
 
 /* Estilos para os botões quando ativos */
@@ -108,7 +143,7 @@ button:active {
 
 /* Estilos para .div1 */
 .corpo #div1 {
-  box-shadow: 0 0 15px #faa35c; /* Adiciona uma sombra ao redor da div */
+  box-shadow: 0 0 15px #1d1d1d; /* Adiciona uma sombra ao redor da div */
   width: 100%; /* Define a largura para 100% da viewport */
   background-size: cover; /* Ajusta o background para cobrir toda a div */
   display: flex; /* Define a div como flex container */
@@ -133,12 +168,12 @@ button:active {
 }
 
 #texto_introdução{
-  border: 5px solid rgb(238, 17, 17); /* Define a borda da div */
   width: 110%;
   font-size: 25px;
   color: #ffffff;
   padding: auto;
   font-family: "Roboto", sans-serif; /* Define a família da fonte */
+  padding: 90px;
 }
 
 /* Estilos para .div2 */
@@ -178,7 +213,7 @@ button:active {
 /* Estilos adicionais para o botão #BOTAOUCL */
 #BOTAOUCL {
   transform: scale(0.9); /* Reduz o tamanho ao ser pressionado */
-  color: #725AC1; /* Define a cor do texto */
+  color: var(--cor-rosa); /* Define a cor do texto */
 }
 
 /*REDES SOCIAIS*/
