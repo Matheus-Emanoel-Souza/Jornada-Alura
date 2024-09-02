@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ClassScore.Migrations
 {
     /// <inheritdoc />
-    public partial class CriandoTabelaDeMateria : Migration
+    public partial class TabelaAluno : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,7 +15,7 @@ namespace ClassScore.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "employee",
+                name: "eng_computacao",
                 columns: table => new
                 {
                     codigo = table.Column<int>(type: "int", nullable: false)
@@ -23,13 +23,11 @@ namespace ClassScore.Migrations
                     nome = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ch = table.Column<int>(type: "int", nullable: false),
-                    periodo = table.Column<int>(type: "int", nullable: false),
-                    conteudo = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                    periodo = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_employee", x => x.codigo);
+                    table.PrimaryKey("PK_eng_computacao", x => x.codigo);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
         }
@@ -38,7 +36,7 @@ namespace ClassScore.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "employee");
+                name: "eng_computacao");
         }
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClassScore.Migrations
 {
     [DbContext(typeof(materiacontext))]
-    [Migration("20240822130947_CriandoTabelaDeMateria")]
-    partial class CriandoTabelaDeMateria
+    [Migration("20240902174606_TabelaAluno")]
+    partial class TabelaAluno
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,9 +36,6 @@ namespace ClassScore.Migrations
                     b.Property<int>("ch")
                         .HasColumnType("int");
 
-                    b.Property<string>("conteudo")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("nome")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -50,7 +47,7 @@ namespace ClassScore.Migrations
 
                     b.HasKey("codigo");
 
-                    b.ToTable("employee");
+                    b.ToTable("eng_computacao");
                 });
 #pragma warning restore 612, 618
         }
