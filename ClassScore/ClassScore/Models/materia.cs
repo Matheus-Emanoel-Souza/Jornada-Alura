@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClassScore.Models
 {
-    [Table("employee")]
+    [Table("eng_computacao")]
     public class Materia
     {
         

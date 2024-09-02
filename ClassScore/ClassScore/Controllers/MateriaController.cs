@@ -2,6 +2,7 @@
 using ClassScore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using System.Reflection;
 using System.Security.Cryptography;
@@ -224,6 +225,32 @@ public class MateriaController : ControllerBase
         }
         return Ok(_context.materia);
 
+    }
+    [HttpGet("Período")]
+    public ActionResult<List<Materia>> RetornaMateriasPeriodo(int periodo)
+    {
+        List<Materia> materiasnomesmoPeriodo = _context.materia.Where(Materia => Materia.periodo == periodo).ToList();
+        if(materiasnomesmoPeriodo.Count == 0)
+        {
+            return Ok("Não existe esse período");
+         }
+        return Ok(formataJSON(materiasnomesmoPeriodo));
+    }
+    
+    static string formataJSON(List<Materia> materias)
+    {
+        string msg = "";
+        
+        foreach (Materia materia in materias)
+        {
+             msg+= $"Nome da matéria: {materia.nome}\n" +
+                      $"Período da matéria: {materia.periodo}\n" +
+                      $"Carga Horária da Matéria: {materia.ch}\n" +
+                      $"Código: {materia.codigo}\n" +
+                      $"\n\n";
+            
+        }
+        return msg;
     }
 
 }
