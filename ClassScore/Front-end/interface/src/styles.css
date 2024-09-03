@@ -12,43 +12,18 @@
   --rosa-forte:#fe1f74;
 }
 
-/* Mobile devices (max-width: 768px) */
-@media (max-width: 768px) {
-  .barra {
-    flex-direction: column;
-  }
-  .barra img {
-    width: 100%;
-  }
-}
-
-/* Tablet devices (min-width: 769px) and (max-width: 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .corpo #div1 {
-    flex-wrap: wrap;
-  }
-}
-
-/* Desktop devices (min-width: 1025px) */
-@media (min-width: 1025px) {
-  .barra {
-    justify-content: space-between;
-  }
-}
-
 /*HTML NO GERAL*/
 html{
 
   background: linear-gradient(180deg, var(--cor-Azul-escuro), var(--cor-preto) );
   padding: 0.5% 1.5%; /* Define o espaçamento interno */
 }
-/*Preciso urgentemente melhorar minha estilização!*/
 
 
 
 /* Estilos para .background */
 .background {
-  height: 100vh; /* Define a altura para 100% da viewport */
+  height: 100vw; /* Define a altura para 100% da viewport */
   width: 100vw; /* Define a largura para 100% da viewport */
   background-size: cover; /* Ajusta o background para cobrir toda a div */
   margin-top: 20px; /* Adiciona uma margem superior */
@@ -345,4 +320,28 @@ button:active {
 
 .corpo #div3 .redessociais{
   align-items: center; /* Centraliza os itens verticalmente */
+}
+
+
+/* From Uiverse.io by alexruix */
+  #Formulário .input{
+  max-width: 100%;
+  background-color: #f5f5f5;
+  color: #242424;
+  padding: .15rem .5rem;
+  min-height: 400px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+  border-bottom: 2px solid #5b5fc7;
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
 }
