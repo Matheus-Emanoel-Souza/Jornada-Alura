@@ -2,6 +2,7 @@
 using ClassScore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using System.Reflection;
@@ -226,7 +227,7 @@ public class MateriaController : ControllerBase
         return Ok(_context.materia);
 
     }
-    [HttpGet("Período")]
+    [HttpGet("Periodo")]
     public ActionResult<List<Materia>> RetornaMateriasPeriodo(int periodo)
     {
         List<Materia> materiasnomesmoPeriodo = _context.materia.Where(Materia => Materia.periodo == periodo).ToList();
@@ -252,5 +253,4 @@ public class MateriaController : ControllerBase
         }
         return msg;
     }
-
 }

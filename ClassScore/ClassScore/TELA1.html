@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <h1>TESTE AJAX</h1>
+</body>
+</html>
+
+<script type="text/javascript">
+    function getValue() {        
+        var obj = {
+            "periodo": 2
+        }
+
+        var data = JSON.stringify(obj);
+
+        $.ajax({
+            type: 'GET',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            url: encodeURI('/Materia/Periodo'),
+            //cache: false,
+            data: {
+                periodo: 2
+            },
+            success: (e) => {
+                console.log('success')
+            },
+            error: (e) => {
+                console.log('error')
+            },
+            complete: (e) => {
+                console.log('complete');
+            }
+        });
+    }
+
+
+    $(document).ready(function() {
+        getValue();
+    });
+</script>
